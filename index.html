@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="txtcentrar">Calculadora I.M.C</h1>
+    <form action="#" method="post">
+    <ul>
+        <li>
+          <label for="txtaltura">Altura:</label>
+          <input type="text" 
+                 id="txtaltura" 
+                 name="txtaltura" 
+                 placeholder="Altura en cm"
+                 >
+        </li>
+        <li>
+          <label for="txtpeso">Peso:</label>
+          <input type="text" id="txtpeso" name="txtpeso" 
+                 placeholder="Peso en kg"
+                 required>
+        </li>
+        <li>
+          <label for="txtresultado">Resultado:</label>
+          <input type="text" id="txtresultado" 
+                 name="txtresultado" 
+                 placeholder="resultado"
+                 readonly >
+        </li>
+        <li class="button">
+            <button type="button" id="btnCalcular">Calcular Imc</button>
+            <button type="reset" id="btnReset">Limpiar</button>
+        </li>
+    </ul>
+      <div id="msg" class="txtcentrar"></div>
+    </form>
+  </div>
+
+  <!--  <script src="resources/js/imcbueno.js"></script> -->
+  <script src="resources/js/imcmoderno.js"></script>
+
+</body>
+</html>
